@@ -6,7 +6,7 @@ require 'vendor/autoload.php';
 <html lang="en-US">
 	<head>
 		<meta charset="UTF-8">
-		<title>Snail Habitats For Mrs. Nations Class</title>
+		<title>Snail Habitats</title>
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
 		<style>
@@ -25,7 +25,7 @@ require 'vendor/autoload.php';
 		<!-- Header -->
 		<header class="bg-info text-center py-5 mb-4">
 		  <div class="container">
-			<h1 class="font-weight-light text-white">Snail Habitats For Mrs. Nations Class</h1>
+			<h1 class="font-weight-light text-white">Snail Habitats</h1>
 		  </div>
 		</header>
 
@@ -45,8 +45,8 @@ require 'vendor/autoload.php';
 				  <h5 class="card-title mb-0">Dark Cave Snails</h5>
 				  <div class="card-text text-black-50 students">
 					<div class="row">
-						<div class="col-xl-6 col-md-6 col-sm-12">Danny</div>
-						<div class="col-xl-6 col-md-6 col-sm-12">Liam</div>
+						<div class="col-xl-6 col-md-6 col-sm-12">Student Name</div>
+						<div class="col-xl-6 col-md-6 col-sm-12">Student Name</div>
 					</div>
 					<div class="row">
 						<div class="col-xl-6 col-md-6 col-sm-12">Olivia</div>
