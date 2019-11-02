@@ -6,13 +6,15 @@ This was project done in a classroom with 22 students. We broke the kids out int
 You can follow the project and live habitats at https://www.snailhabitat.com/. I would love to see others habitats, so if you create one, please share it and I would be happy to publish it on snailhabitat.com
 
 ## Supplies Used
-This will be a list of supplies we used to build the habitats.
+This will be a list of supplies we used to build the habitats. Coming soon!!
 
 ## Raspberry Pi Image
-This will be the fully functional OS & software we setup on the Raspberry Pi. 
+The OS installed is Raspian https://www.raspberrypi.org/downloads/raspbian/. After Raspian is installed on it, create an "images" folder and a "code" folder on the desktop and make the images folder writeable. Save the camera.py file into the code folder and make it executable.
+
+You will also need to install s3cmd on the Raspberry Pi. To do this, open up the command prompt tool and type sudo apt-get install s3cmd and follow the prompts. It will prompt you to enter in your AWS S3 settings so make sure you have AWS S# setup before running this. You can view a list if s3cmd commands from https://s3tools.org/s3cmd-howto
 
 ## Python Code
-The python code installed on the Raspberry Pi for taking photos and uploading to AWS is at https://github.com/mistylackie/snail-habitat/blob/master/camera.py. If you install the Raspberry Pi image we provided above, it will already have this script installed and ready on the Pi.
+The python code installed on the Raspberry Pi for taking photos and uploading to AWS is at https://github.com/mistylackie/snail-habitat/blob/master/camera.py. Make sure this script is located in the code folder you created on your desktop. You also need to make this file executable so it can be run from your CRON.
 
 ## AWS Setup
 You will need to setup an S3 bucket on AWS and sub-folders within that bucket for each snail habitat you want to capture photos for. Each sub-folder needs to be viewable for public so the photos can be accessible.
