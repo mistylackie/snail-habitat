@@ -1,0 +1,5 @@
+Options +FollowSymLinks
+RewriteEngine On
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule ^gallery/(.*)/$ gallery.php?prefix=$1 [L]
+RewriteRule ^gallery/(.*)$ gallery.php?prefix=$1 [L]
