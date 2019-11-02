@@ -20,7 +20,11 @@ The python code installed on the Raspberry Pi for taking photos and uploading to
 You will need to setup an S3 bucket on AWS and sub-folders within that bucket for each snail habitat you want to capture photos for. Each sub-folder needs to be viewable for public so the photos can be accessible.
 
 ## CRON
-If you install the Raspberry Pi image we provided above, it will already have this CRON script setup. It is currently setup to run every hour during daylight times (8am to 7pm). If you want it to run at night, you will need to get a flash for the Pi camera, which we do not have for this project. You can edit thr CRON schedule from the command tool on the Raspberry pi by running crontab -e
+To create a scheduled CRON that will run your camera.py script every hour go into the command prompt tool and run crontab -e. Scroll to the bottom and add the following to have your script run every hour during daylight times (8am to 6pm). 
+
+0 8-18 * * * python /home/pi/Desktop/code/camera.py
+
+If you want it to run at night, you will need to get a flash for the Pi camera, which we do not have for this project.
 
 ## Web Pages
 To keep things simple, we set this up on a basic LAMP stack. The design us using Bootstrap and coded in PHP 7. You will need to install composer on your server and install the dependencies using composer. The composer.lock file is included making it easier for you to install the dependencies. Feel free to contact me if you have trouble installing composer or the dependencies.
