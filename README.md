@@ -1,7 +1,7 @@
 # Snail Habitat with photo capture
 Snail habitat with a Raspberry Pi computer + camera attached to it for capturing a history of photos. The photos post to AWS and display on a web page.
 
-![image](https://www.snailhabitat.com/images/snail-habitats-raspberry-pi.jpg)
+![image](https://www.snailhabitat.com/images/snail-habitats-camera.jpg)
 
 This was project done in a classroom with 22 students. We broke the kids out into groups and created 5 snail habitats. It would be a great project to do school wide too, where you create 1 snail habitat per class. This would allow the entire school to get involved and monitor each others habitats. 
 
