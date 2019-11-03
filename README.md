@@ -27,6 +27,15 @@ To create a scheduled CRON that will run your camera.py script every hour go int
 If you want it to run at night, you will need to get a flash for the Pi camera, which we do not have for this project.
 
 ## Web Pages
-To keep things simple, we set this up on a basic LAMP stack. The design us using Bootstrap and coded in PHP 7. You will need to install composer on your server and install the dependencies using composer. The composer.lock file is included making it easier for you to install the dependencies. Feel free to contact me if you have trouble installing composer or the dependencies.
+To keep things simple, we set this up using Bootstrap for design and coded in PHP 7 for connecting to the AWS API for pulling in the S3 images. You will need to install composer on your server and install the dependencies using composer. The composer.lock file is included making it easier for you to install the dependencies. Feel free to contact me if you have trouble installing composer or the dependencies.
 
 Edit the config.php file with your AWS settings. To change group names or add more groups, edit the s3-photos.php file
+
+## Future To Do's
+- Install a flash on the Pi camera so we can capture photos at night
+- Change CRON to run every 5 minutes in order to capture more photos for a timelapse video
+
+## Gotchas
+- If the front of the tubs are not clean, photos will not be as clear. You may need to wipe this down periodically.
+- I suggest taping your PI & tub down after you get the camera in the right position. Any little nudge can offset the photo positioning.
+- Light coming into the room during different times of the day can affect the photos. Glare, shadows, etc. I suggest finding a spot that has good, consistent light throughout the day.
