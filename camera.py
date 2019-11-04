@@ -5,7 +5,6 @@ import datetime as dt
 import sys
 import subprocess
 import os
-import RPi.GPIO as GPIO
 
 BUCKET = "s3://your-sws-s3-bucket-here/"
 SRC_DIR = "/home/pi/Desktop/images/"
@@ -20,18 +19,9 @@ camera.framerate = 15
 camera.start_preview()
 camera.annotate_text = CURRENT_DATE
 
-GPIO.setmode(GPIO.BCM)
-GPIO.setwarnings(False)
-GPIO.setup(18,GPIO.OUT)
-print ("LED on")
-GPIO.output(18,GPIO.HIGH)
-
-sleep(35)
+sleep(10)
 camera.capture('/home/pi/Desktop/images/'+IMAGE_NAME+'.jpg')
 camera.stop_preview()
-
-print ("LED off")
-GPIO.output(18,GPIO.LOW)
 
 CMD = "s3cmd put --acl-public %s/*.* %s" % (SRC_DIR, DEST)
 subprocess.call(CMD, shell=True)
