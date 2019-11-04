@@ -13,7 +13,7 @@ This will be a list of supplies we used to build the habitats. Coming soon!!
 ## Raspberry Pi Image
 The OS installed is Raspian https://www.raspberrypi.org/downloads/raspbian/. After Raspian is installed on it, create an "images" folder and a "code" folder on the desktop and make the images folder writeable. Save the camera.py file into the code folder and make it executable.
 
-You will also need to install s3cmd on the Raspberry Pi. To do this, open up the command prompt tool and type sudo apt-get install s3cmd and follow the prompts. It will prompt you to enter in your AWS S3 settings so make sure you have AWS S# setup before running this. You can view a list if s3cmd commands from https://s3tools.org/s3cmd-howto
+You will also need to install s3cmd on the Raspberry Pi. To do this, open up the command prompt tool and type sudo apt-get install s3cmd and follow the prompts. It will prompt you to enter in your AWS S3 settings so make sure you have AWS S3 setup before running this. You can view a list if s3cmd commands from https://s3tools.org/s3cmd-howto
 
 ## Python Code
 The python code installed on the Raspberry Pi for taking photos and uploading to AWS is at https://github.com/mistylackie/snail-habitat/blob/master/camera.py. Make sure this script is located in the code folder you created on your desktop. You also need to make this file executable so it can be run from your CRON.
