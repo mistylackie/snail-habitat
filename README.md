@@ -8,7 +8,14 @@ This was project done in a classroom with 22 students. We broke the kids out int
 You can follow the project and live habitats at https://www.snailhabitat.com/. I would love to see others habitats, so if you create one, please share it and I would be happy to publish it on snailhabitat.com
 
 ## Supplies Used
-This will be a list of supplies we used to build the habitats. Coming soon!!
+Following is a list of supplies we used for the habitats
+- [Raspberry Pi 3](https://amzn.to/2PX22Tn)
+- [Raspberry Pi 3 Transparent Case](https://amzn.to/2pB87tW)
+- [Raspberry Pi Camera](https://amzn.to/2Cftwey)
+- [Raspberry Pi 3 Heatsink Set](https://amzn.to/2JT2T3u)
+- [USB 2.0 A-Male to Micro B Cable](https://amzn.to/2NIFLWC)
+- [8 GB microSD Memory Card](https://amzn.to/34yxjQj)
+- [Clear Plastic Tubs](https://amzn.to/2POL8Gk)
 
 ## Raspberry Pi Image
 The OS installed is Raspian https://www.raspberrypi.org/downloads/raspbian/. After Raspian is installed on it, create an "images" folder and a "code" folder on the desktop and make the images folder writeable. Save the camera.py file into the code folder and make it executable.
