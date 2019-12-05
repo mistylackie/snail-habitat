@@ -1,11 +1,11 @@
 # Snail Habitat with photo capture
-Snail habitat with a Raspberry Pi computer + camera attached to it for capturing a history of photos. The photos post to AWS and display on a web page.
+Snail habitat with a Raspberry Pi computer + camera attached to it for capturing a history of photos. The photos post to AWS and display on a web page. Full source code is at [https://github.com/mistylackie/snail-habitat](https://github.com/mistylackie/snail-habitat)
 
 ![image](https://www.snailhabitat.com/images/snail-habitats-camera.jpg)
 
 This was project done in a classroom with 22 students. We broke the kids out into groups and created 5 snail habitats. It would be a great project to do school wide too, where you create 1 snail habitat per class. This would allow the entire school to get involved and monitor each others habitats. 
 
-You can follow the project and live habitats at https://www.snailhabitat.com/. I would love to see others habitats, so if you create one, please share it and I would be happy to publish it on snailhabitat.com
+You can follow the project and live habitats at [https://www.snailhabitat.com/](https://www.snailhabitat.com/). I would love to see others habitats, so if you create one, please share it and I would be happy to publish it on snailhabitat.com
 
 ## Supplies Used
 Following is a list of supplies we used for the habitats
@@ -23,7 +23,7 @@ The OS installed is Raspian https://www.raspberrypi.org/downloads/raspbian/. Aft
 You will also need to install s3cmd on the Raspberry Pi. To do this, open up the command prompt tool and type sudo apt-get install s3cmd and follow the prompts. It will prompt you to enter in your AWS S3 settings so make sure you have AWS S3 setup before running this. You can view a list if s3cmd commands from https://s3tools.org/s3cmd-howto
 
 ## Python Code
-The python code installed on the Raspberry Pi for taking photos and uploading to AWS is at https://github.com/mistylackie/snail-habitat/blob/master/camera.py. Make sure this script is located in the code folder you created on your desktop. You also need to make this file executable so it can be run from your CRON.
+The python code installed on the Raspberry Pi for taking photos and uploading to AWS is at [https://github.com/mistylackie/snail-habitat/blob/master/camera.py](https://github.com/mistylackie/snail-habitat/blob/master/camera.py). Make sure this script is located in the code folder you created on your desktop. You also need to make this file executable so it can be run from your CRON.
 
 ## AWS Setup
 You will need to setup an S3 bucket on AWS and sub-folders within that bucket for each snail habitat you want to capture photos for. Each sub-folder needs to be viewable for public so the photos can be accessible.
